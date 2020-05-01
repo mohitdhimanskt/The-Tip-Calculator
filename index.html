@@ -17,14 +17,22 @@
                 $<input id="bill" type="text">
                 <h2>How was your service?</h2>
                 <select class="fontSize" name="service" id="service">
-                    <option class="fontSize" value="30">30%-outstanding</option>
+                    <option class="fontSize" value="30">30%-Outstanding</option>
                     <option class="fontSize" value="20">20%-Good</option>
                     <option class="fontSize" value="15">15%-It was OK</option>
                     <option class="fontSize" value="10">10%-Bad</option>
                     <option class="fontSize" value="5">5%-Terible</option>
                 </select>
-                <h2>How many people sharing the table</h2>
-                <input id="person" type="text">People
+                <h2>How many people are sharing the bill?</h2>
+                <input id="person" type="text">people
+             </div>
+             <button class="fontSize" id="calc">
+                 CALCULATE!
+             </button>
+             <div class="fontSize" id="tipResult">
+                 <p>TIP AMOUNT</p>
+                 <p id="result">$</p>
+                 <p id="each">Each</p>
              </div>
         </div>
         <script src="index.js"></script>
