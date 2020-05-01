@@ -17,7 +17,7 @@ body{
     text-align: center;
     border: 0px solid white;
     border-radius: 40px;
-    background-color: white;
+    background-color:#F7F7F7;
 }
 
 h2{
@@ -54,4 +54,31 @@ form{
 #thrid{
     margin-left: 20px;
     margin-top: 15px;
+}
+#people{
+    font-size: 20px;
+    padding: 5px;
+}
+#result{
+    text-align: center;
+}
+#calc{
+    width:250px;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+    background-color: #B6003A;
+    margin-top: 20px;
+    font-weight: 600px;
+    font-size: 20px;
+}
+#result p{
+    font-weight: 600;
+    font-size: 25px;
+}
+#each{
+    font-size: 25px;
+}
+#makeHidden{
+    display: block;
 }
