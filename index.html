@@ -8,33 +8,38 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="container">
-            <div class="top">
-                <h1>Tip Calculator</h1>
-            </div>
-            <div class="showScreen">
-                <h2>How much was your bill?</h2>
-                $<input id="bill" type="text">
-                <h2>How was your service?</h2>
-                <select class="fontSize" name="service" id="service">
-                    <option class="fontSize" value="30">30%-Outstanding</option>
-                    <option class="fontSize" value="20">20%-Good</option>
-                    <option class="fontSize" value="15">15%-It was OK</option>
-                    <option class="fontSize" value="10">10%-Bad</option>
-                    <option class="fontSize" value="5">5%-Terible</option>
-                </select>
-                <h2>How many people are sharing the bill?</h2>
-                <input id="person" type="text">people
+      <div id="container">
+       <h2> TIP CALCULATOR</h2>
+        <form >
+         <div id="first">
+         <p>How much was your bill ?</p><br>
+          <span>$ <input id="amount" type="number" value=""></span>
              </div>
-             <button class="fontSize" id="calc">
-                 CALCULATE!
-             </button>
-             <div class="fontSize" id="tipResult">
-                 <p>TIP AMOUNT</p>
-                 <p id="result">$</p>
-                 <p id="each">Each</p>
-             </div>
-        </div>
+            <div id="second" >
+             <p>How was your service ?</p><br>
+             <select id="discount" >
+                <option value="0" >-- Choose an option --</option>
+                <option value="30">30 % Outstanding</option>
+                 <option value="20">20 % Good</option>
+                 <option value="15">15 % It was OK</option>
+                  <option value="10">10 % Bad</option>
+                  <option value="5">5 % Terrible</option>
+                  </select>
+                   </div>
+                     <div id="third">
+                            <p>How many people are sharing the bill ?</p><br>
+                           <input id="people" type="number" value=""> people
+                        </div>
+                        <div id="result">
+                            <button id="calc">CALCULATE!</button>
+                            <br><br>
+                            <p>TIP AMOUNT</p>
+                            <p>$ <span id="each">0.00</span></p>
+                            <p id="makeHidden">each</p>
+            
+                        </div>
+                    </form>
+                </div>
         <script src="index.js"></script>
     </body>
 </html>
