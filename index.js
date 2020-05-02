@@ -1,6 +1,7 @@
-document.getElementById('calc').addEventListener('click',calculator);
 
-function calculator(){
+
+function calculator(e){
+   e.preventDefault()
 
     let amount = document.getElementById('amount').value;
     let discount = document.getElementById('discount').value;
@@ -32,5 +33,5 @@ function calculator(){
 
 }
 document.getElementById('makeHidden').style.display="none";
-
+document.getElementById('calc').addEventListener('click',calculator);
 
